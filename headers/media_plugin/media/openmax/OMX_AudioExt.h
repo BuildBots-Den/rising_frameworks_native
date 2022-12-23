@@ -78,8 +78,9 @@ typedef struct OMX_AUDIO_PARAM_ANDROID_AC4TYPE {
                                         variable or unknown sampling rate. */
 } OMX_AUDIO_PARAM_ANDROID_AC4TYPE;
 
+// MIUI ADD: DOLBY_AC4_SPLIT_SEC
 #define OMX_LUT_BUFF_SZ 256
-#define OMX_B_C_SZ 80
+#define OMX_B_C_SZ 84
 typedef struct OMX_AUDIO_PARAM_ANDROID_AC4TBL {
     OMX_U32 nSize;
     OMX_U8 seedA;
@@ -102,6 +103,7 @@ typedef struct OMX_AUDIO_PARAM_ANDROID_AC4TBL {
     OMX_U8 bufferB[OMX_B_C_SZ];
     OMX_U8 bufferC[OMX_B_C_SZ];
 } OMX_AUDIO_PARAM_ANDROID_AC4TBL;
+// MIUI END
 
 typedef struct OMX_AUDIO_PARAM_ANDROID_OPUSTYPE {
     OMX_U32 nSize;            /**< size of the structure in bytes */
